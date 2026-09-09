@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lanyard Support</title>
+<meta name="description" content="Help, contact and answers for Lanyard, the on-device business card scanner for iPhone.">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F4F6F6;
+    --surface:#FFFFFF;
+    --ink:#14191C;
+    --ink-soft:#4F5F66;
+    --accent:#215C7A;
+    --rule:#DFE5E7;
+    --amber:#8A6412;
+    --callout-bg:#EAF1F3;
+    --mono-bg:#E9EEEF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0E1416;
+      --surface:#161E21;
+      --ink:#E6EBEC;
+      --ink-soft:#97A6AC;
+      --accent:#7FB6CE;
+      --rule:#243036;
+      --amber:#D6AC55;
+      --callout-bg:#15242B;
+      --mono-bg:#1A2429;
+    }
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:40em;
+    margin:0 auto;
+    padding:2.75rem 1.5rem 6rem;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 .35rem;
+  }
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.3rem;
+    margin:2.4rem 0 .9rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    scroll-margin-top:1rem;
+  }
+  h3{ font-size:1.05rem; margin:1.6rem 0 .6rem; }
+  p, li{ font-size:1rem; color:var(--ink); }
+  p{ margin:0 0 1rem; }
+  .meta, .updated{ color:var(--ink-soft); font-size:.95rem; margin:0 0 2.25rem; }
+  .lede{ color:var(--ink-soft); font-size:1.08rem; }
+  a{ color:var(--accent); }
+  ul, ol{ padding-left:1.3rem; margin:0 0 1rem; }
+  li{ margin-bottom:.5rem; }
+  code{
+    background:var(--mono-bg);
+    border-radius:5px;
+    padding:.1rem .35rem;
+    font-size:.9em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  .callout{
+    background:var(--callout-bg);
+    border-left:4px solid var(--accent);
+    border-radius:10px;
+    padding:1.2rem 1.4rem .2rem;
+    margin:1.75rem 0;
+  }
+  .callout h2, .callout h3{ margin-top:0; border-top:none; padding-top:0; }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:1.1rem 1.4rem;
+    margin:2.25rem 0;
+  }
+  .toc p{
+    margin:0 0 .6rem;
+    font-weight:600;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+  }
+  .toc ol{ margin:0; padding-left:1.2rem; }
+  .toc li{ margin-bottom:.4rem; font-size:.95rem; }
+  .toc a{ text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  .pagenav{
+    margin:0 0 2rem;
+    font-size:.95rem;
+    color:var(--ink-soft);
+  }
+  .pagenav a, .pagenav strong{ margin-right:1rem; }
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+  strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <p class="pagenav"><strong>Support</strong> <a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a></p>
+
+  <h1>Lanyard</h1>
+  <p class="lede">Business cards into contacts, without an account and without an upload.</p>
+
+  <h2 id="contact">Getting help</h2>
+  <p>Email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a>. One person reads it, and replies are usually
+  within a couple of days. Telling me your iPhone model and iOS version saves a round trip.</p>
+  <p>If a particular card scanned badly, describing what was wrong — "it put the company in the
+  name field", "it read the fax number as a mobile" — is far more useful than a screenshot, and I
+  do not need the card itself. <strong>Please do not email me somebody else's business card.</strong>
+  I have no way to receive it that respects the person on it, and Lanyard is built specifically so
+  that card never has to leave your phone.</p>
+
+  <h2 id="faq">Common questions</h2>
+
+  <h3>Does anything get uploaded?</h3>
+  <p>No. Text recognition uses Apple's Vision framework, which runs on the iPhone itself. The app
+  makes no network requests of any kind — not to a server of mine, because there isn't one, and not
+  to anybody else's. The card image and the text read from it stay in Lanyard's own storage on your
+  device. The only things that ever move are a file you export or a card you add to your own
+  Contacts, and both happen because you asked.</p>
+
+  <h3>Why does that matter?</h3>
+  <p>Because of where business cards get scanned. If you are standing at a competitor's stand at a
+  trade show, sending a photograph of the card you were just handed to a third-party server is a
+  disclosure you probably did not intend to make — about the person who gave it to you, and about
+  who you were talking to. Every mainstream card scanner requires an account and processes cards
+  server-side. Lanyard is the one that cannot, because it has no server.</p>
+
+  <h3>What is free, and what is Pro?</h3>
+  <p><strong>Ten scans, for the lifetime of the app</strong> — not ten a month. That is enough to
+  point it at your own cards and see whether it reads them properly, which is the only question a
+  free tier can honestly answer. Everything you scan in those ten is yours to keep, edit and export
+  to Contacts.</p>
+  <p>Pro removes the limit and adds batch mode, CSV and vCard export, event tagging, duplicate
+  detection and search across every scan. It is $59.99 a year or $7.99 a month.</p>
+
+  <h3>Why is there no free trial?</h3>
+  <p>Deliberately. A trial that starts while you are at a conference and charges you a week later,
+  at home, having forgotten about it, is a worse deal than being told the price up front. The ten
+  scans do the same job without the ambush.</p>
+
+  <h3>I deleted a card. Do I get the scan back?</h3>
+  <p>No, and that is on purpose. The allowance counts scans, not stored cards, so deleting one does
+  not return it. Otherwise the free tier would just be a game of delete-and-rescan, which would be
+  unfair to everybody who paid and confusing for everybody who didn't.</p>
+
+  <h3>How accurate is it?</h3>
+  <p>On a clean, conventionally laid-out card, usually all of it. Lanyard tells you when it is not
+  sure: fields it had to guess are highlighted in the review screen with the reason underneath — "read
+  as the name because it is the largest text on the card and matches the email address" — so you can
+  check its reasoning instead of taking the result on faith. Cards where the name is set over a
+  photograph, or where the type is very small or very stylised, are the ones that need a correction.</p>
+
+  <h3>How does it know which number is the mobile?</h3>
+  <p>From the label beside it. Cards abbreviate — <code>M</code>, <code>T</code>, <code>F</code>,
+  <code>Mobil</code>, <code>Tél</code>, <code>Handy</code>, <code>Port.</code> — and Lanyard knows
+  those abbreviations in several languages. Where a number carries no dialling code, the country is
+  taken from the address or the email domain so it still comes out dialable.</p>
+
+  <h3>It got the first and last name the wrong way round.</h3>
+  <p>Tap the field and swap them; it takes a second. Lanyard reads a family name printed first when
+  the card signals it — a capitalised surname, a comma, an East Asian name — and it uses the email
+  address to check itself, because <code>soojin.kim@</code> settles an argument that typography
+  cannot. When it has made that call without confirmation it flags the field rather than asserting
+  it.</p>
+
+  <h3>Can it scan a stack of cards at once?</h3>
+  <p>Yes, with Pro. Batch mode keeps the camera up: tap the shutter for each card and Lanyard queues
+  and reads them in the background. Review the whole stack afterwards, on the plane home, and only
+  the fields it doubted are waiting for you. The document scanner also takes several pages in one
+  pass, which suits a pile of cards on a table.</p>
+
+  <h3>Will the CSV import into my CRM?</h3>
+  <p>That is the point of the format picker. The Salesforce, HubSpot, Outlook and Google Contacts
+  layouts use the exact column names each of those importers matches on, so the file drops in without
+  a field-mapping step. There is also a complete layout with every field Lanyard holds, and vCard
+  3.0 and 4.0 for everything else.</p>
+
+  <h3>Does Lanyard read my address book?</h3>
+  <p>No. It asks for permission to <em>add</em> contacts, never to read them. Duplicate checking runs
+  against your own Lanyard scans, so there is no reason for the app to see your address book — and
+  asking for the whole thing in order to save one card would be a bad trade.</p>
+
+  <h3>What happens if I lose my phone?</h3>
+  <p>Your cards are in an encrypted iPhone or iCloud backup if you make one, and nowhere else. There
+  is no account to sign into on a new phone and no copy on a server to restore from. If that matters
+  to you, export a CSV or vCard occasionally and keep it somewhere you control.</p>
+
+  <h3>How do I cancel?</h3>
+  <p>Subscriptions are managed by Apple, not by this app: open the Settings app, tap your name, then
+  <strong>Subscriptions</strong>. Cancelling stops the next renewal and you keep Pro until the period
+  you have paid for ends.</p>
+
+  <h3>The widget is not updating.</h3>
+  <p>Remove it and add it again. If it still shows nothing, open the app once — the widget reads a
+  small summary the app writes, and there is nothing to read until the app has run since installing.
+  Names only appear on a widget with Pro, and that is decided when the summary is written, so a free
+  install never puts them there at all.</p>
+
+  <h2 id="privacy">Privacy in one line</h2>
+  <p>Nothing leaves your iPhone unless you export it. The
+  <a href="privacy.html">full policy</a> says so at length, including what that means for the
+  person whose card you just scanned.</p>
+
+  <footer>
+    <p>Lanyard &middot; William Scott<br>
+    <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
